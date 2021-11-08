@@ -5,51 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
     <div class="upper">
-      <div class="corona">
-        <h1>COVID-19 LIVE UPDATE</h1>
-
-        <!-- <div class="gujart">
-          <h1>GUJARAT</h1>
-          <div class="gj1">
-            <span class="head">ACTIVE CASE:</span><span class="no">263</span>
+      <div class="corona" id="corona">
+        <header class="headerCorona">
+         <p class="small">Personalized Covid-19 Tracker</p>
+      
+         <select class="select" id="select" onchange="list()">
+           <option value="India" class="opt" onchange="ind()">India</option>
+           <option value="Mumbai" class="opt" id="mumbai" onchange="mumbai()" >Maharashtra</option>
+           <option value="guj" class="opt" onclick="gujarat()">Gujarat</option>
+         </select>
+         <p class="small">Last updated <span id="update">--</span></p>
+        </header>
+         <div class="boxContainer">
+           <div class="box1 box">
+             <p class="boxh">ACTIVE CASES</p>
+             <h3 id="active-case">--</h3>
+             <br>
+             <p class="boxh">ACTIVE CASES NEW</p>
+             <h3 id="active-casse-new">--</h3>
+           </div>
+           <div class="box2 box">
+            <p class="boxh" id="death">DEATHS</p>
+            <h3 id="deaths">--</h3>
+            <br>
+            <p class="boxh" id="death-new">DEATHS NEW</p>
+            <h3 id="deaths-new">--</h3>
+           </div>
+           <div class="box3 box">
+            <p class="boxh">RECOVERED</p>
+            <h3 id="recovered">--</h3>
+            <br>
+            <p class="boxh">RECOVERED NEW</p>
+            <h3 id="recovered-new">--</h3>
+           </div>
+           <div class="box4 box">
+             <p class="boxh">TOTAL CASES</p>
+             <h3 id="total">--</h3>
+           </div>
           </div>
-          <div class="gj2">
-            <span class="head">ACTIVE CASE NEW:</span
-            ><span class="no">263</span>
+     
+      </div>
+      <div class="weather">
+        <h1 id="name">--</h1>
+        <!-- <select class="state">
+          <option value="India">India</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Gujarat">Gujarat</option>
+        </select> -->
+        <p>INDIA</p>
+        <p><span>day</span><span>time</span></p>
+        <img
+          id="wheatherimg"
+          src="https://icon-library.com/images/sunny-icon-png/sunny-icon-png-16.jpg"
+          alt=""
+          srcset=""
+        />
+        <h1 id="tempture">18 C</h1>
+        <h2 id="weatherText">sunny(weather)</h2>
+        <div class="container">
+          <div class="humidity">
+            <p>HUMIDITY</p>
+            <p id="humidity">--</p>
           </div>
-          <div class="gj3">
-            <span class="head">DEATH:</span><span class="no">263</span>
+          <div class="wind">
+            <p>WIND</p>
+            <p id="wind">3km/hr</p>
           </div>
-          <div class="gj4">
-            <span class="head">DEATH NEW:</span><span class="no">263</span>
-          </div>
-          <div class="gj5">
-            <span class="head">TEST YESTERDAY:</span><span class="no">263</span>
+          <div class="real">
+            <p>REAL FEEL</p>
+            <p id="feel">19 C</p>
           </div>
         </div>
-        <div class="gujart">
-          <h1>MAHARASHTRA</h1>
-          <div class="mh1">
-            <span class="head">ACTIVE CASE:</span><span class="no">263</span>
+      </div>
+    </div>
+    <div class="down">
+      <div class="news">
+        <img id="news-img" src="./loading.jpg" alt="">
+        <div class="news-info">
+          <h3 id="title">Title...</h3><h4 id="author">~Author</h4>
+          <p class="news-content" id="description">Loading...</p>
+          <div class="btn-container">
+            <a href="http://" id="btn">Read More</a>
+            <br>
+            <button class="btn" onclick="back()">back</button> <button class="btn" onclick="next()">next</button>
           </div>
-          <div class="mh2">
-            <span class="head">ACTIVE CASE NEW:</span
-            ><span class="no">263</span>
-          </div>
-          <div class="mh3">
-            <span class="head">DEATH:</span><span class="no">263</span>
-          </div>
-          <div class="mh4">
-            <span class="head">DEATH NEW:</span><span class="no">263</span>
-          </div>
-          <div class="mh5">
-            <span class="head">TEST YESTERDAY:</span><span class="no">263</span>
-          </div>
-        </div> -->
+        </div>
       </div>
     </div>
     <script src="./index.js"></script>

@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.upper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.boxContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -20px;
+}
+.headerCorona{
+    height: 40%;
+    border: 1px solid green;
+    background-image: url(./corona\ bg.jpg);
+    background-size: cover;
+    color: white;
+    padding: 30px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.small{
+    font-size: 14px;
+}
+.ind{
+    font-weight:bolder;
+    background: transparent;
+    background-color: gray;
+}
+.select{
+    background: transparent;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    width: auto;
+}
+.opt{
+    background:black;
+    color: white;
+    font-size: 1rem;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    width: 20px;
+}
+.corona{
+    margin: auto;
+    margin-top: 10px;
+    width: 320px;
+    height: 480px;
+    /* border: 2px solid gray; */
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px 6px rgba(128, 128, 128, 0.363);
+}
+.coronaFooter{
+    position: relative;
+    border-top: 1px solid rgba(0, 0, 0, 0.342);
+    width: 100%;
+   display: grid;
+   grid-template-columns: 1fr 1fr;;
+    justify-content: space-evenly;
+}
+.coronaFooter p {
+    margin: auto;
+    margin-top: 15px;
+    /* width: 100px; */
+    margin-bottom: 0px;
+}
+
+.box{
+    height: 125px;
+    width: 125px;
+    padding: 15px;
+    /* box-shadow: 0 8px 6px -6px black; */
+    box-shadow: 3px 3px 10px 6px rgba(128, 128, 128, 0.363);
+    margin: auto;
+    margin-bottom: 20px;
+    background: white;
+   
+}
+.boxh{
+    color: gray;
+    font-size: 10px;
+    font-weight: 700;
+}
+.countries{
+    height: 430px;
+    overflow:scroll ;
+    padding: 10px;
+}
+
+.num{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.marg{
+    margin-bottom: 5px;
+}
+/* wheather */
+.weather{
+    margin: auto;
+    margin-top: 10px;
+    width: 320px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 3px 3px 10px 6px rgba(128, 128, 128, 0.363);
+}
+.weather p{
+    margin-top: 20px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.state{
+   background: white;
+   color: black;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    height: 30px;
+    width: 100px;
+    margin: 0 auto;
+
+}
+#wheatherimg{
+    height: 100px;
+    width: 100px;
+align-self: center;
+}
+#description{
+    height: 80px;
+    width: 100%;
+    overflow: auto;
+    /* overflow: ; */
+}
+.news{
+    display: flex;
+    height: 200px;
+    width: 82%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 3px 3px 10px 6px rgba(128, 128, 128, 0.363);
+}
+#news-img{
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    margin: auto;
+    margin-left: 5px;
+}
+.news-info{
+  
+    padding: 10px;
+}
+.news-content{
+    width: 600px;
+    margin-bottom: 5px;
+}
+#btn{
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    background: gray;
+    padding: 3px 5px;
+}
+.btn-container{
+    /* margin-top: 5px; */
+    position: absolute;
+    top: 143px;
+}
+.btn{
+    padding: 0 3px;
+    margin-top: 7px;
+ 
+}
+.news-info{
+  width: 100%;
+    position: relative;
+}
+@media screen and (max-width: 426px) {
+    .upper{
+        grid-template-rows: 1fr;
+    }
+  }
